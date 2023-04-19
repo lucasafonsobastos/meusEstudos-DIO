@@ -62,12 +62,13 @@ span.titulo-filme {
     padding: 0 .5rem;
 }
 
-span.categoria {
+.categoria {
     font-size: initial;
     text-transform: uppercase;
     font-weight: bold;
     color: darkgray;
     padding: 0 .5rem;
+    list-style: none;
 }
 
 
