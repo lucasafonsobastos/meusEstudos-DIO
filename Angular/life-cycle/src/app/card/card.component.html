@@ -1,0 +1,30 @@
+<h1>Meu Card</h1>
+<ul>
+	<li *ngFor="let p of produtos">
+		{{ p }}
+	</li>
+</ul>
+
+<div [ngSwitch]="menuType">
+	<div *ngSwitchDefault>
+		<ul>
+			<li> Editar perfil</li>
+			<li> adicionar cartao</li>
+		</ul>
+	</div>
+	<div *ngSwitchCase="'admin'" >
+		<ul>
+			<li> Editar perfil</li>
+			<li> adicionar cartao</li>
+			<li> gerencias usuarios</li>
+		</ul>
+	</div>
+	<div *ngSwitchCase="'sperUser'" >
+		<ul>
+			<li> Editar perfil</li>
+			<li> adicionar cartao</li>
+			<li> gerencias usuarios</li>
+			<li> Configuração geral</li>
+		</ul>
+	</div>
+</div>
